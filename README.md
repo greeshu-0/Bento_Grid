@@ -4,4 +4,4 @@ This is my solution to the **Bento Grid** layout challenge on [Frontend Mentor](
 
 ## 🔗 Live Demo
 
-[View Live Site](#) : https://greeshu-0.github.io/Bento_Grid/ <!-- Replace with your live site URL -->
+View Live Site : https://greeshu-0.github.io/Bento_Grid/ <!-- Replace with your live site URL -->
