@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Bento grid</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: "MyFont";
+        src: url("./assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "MyFontI";
+        src: url("./assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf")
+          format("truetype");
+      }
+      body {
+        background-color: rgb(247, 247, 246);
+      }
+      main {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        margin-top: 10px;
+        height: 95vh;
+        width: 100%;
+        padding-left: 20%;
+        padding-right: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 2fr 3fr;
+        gap: 20px;
+      }
+      .c1 {
+        grid-row: span 2;
+        background-color: hsl(31, 66%, 93%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+        border-radius: 5%;
+      }
+      .c2 {
+        grid-column: span 2;
+        background-color: hsl(256, 67%, 59%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+      }
+      .c3 {
+        grid-row: span 3;
+        background-color: hsl(254, 88%, 90%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5%;
+        padding-left: 20px;
+      }
+      .c4 {
+        background-color: white;
+        grid-row: span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5%;
+        padding-left: 20px;
+      }
+      .c5 {
+        grid-row: span 2;
+        background-color: hsl(39, 100%, 71%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5%;
+        padding-left: 20px;
+      }
+      .c6 {
+        grid-row: span 2;
+        background-color: hsl(39, 100%, 71%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5%;
+        padding-left: 20px;
+      }
+      .c7 {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5%;
+        align-items: center;
+      }
+      .c8 {
+        grid-column: span 2;
+        background-color: hsl(256, 67%, 59%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 5%;
+        margin: 0%;
+        padding: 0%;
+      }
+      @media screen and (max-width: 768px) {
+        .container {
+          width: 100%;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          gap: 50px;
+          padding: 25px;
+        }
+        .c1,
+        .c2,
+        .c3,
+        .c4,
+        .c5,
+        .c6,
+        .c7,
+        .c8 {
+          grid-column: span 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="c1">
+          <p
+            style="
+              font-size: 30px;
+              font-family: MyFont, sans-serif;
+              font-weight: 500;
+              padding-bottom: 15px;
+              margin-bottom: 0%;
+              letter-spacing: -1.5px;
+              line-height: 30px;
+            "
+          >
+            Create and schedule content
+            <span style="color: hsl(256, 67%, 59%)">quicker.</span>
+          </p>
+          <img
+            src="./assets/images/illustration-create-post.webp"
+            style="width: 150px"
+            alt="Create Post"
+          />
+        </div>
+        <div class="c2">
+          <h1
+            style="
+              color: white;
+              text-align: center;
+              padding-left: 25px;
+              padding-right: 25px;
+              font-size: 45px;
+              margin: 0%;
+              padding-top: 25px;
+              letter-spacing: -0.5px;
+              line-height: 40px;
+              padding-bottom: 15px;
+              font-family: MyFont;
+              font-weight: 400;
+            "
+          >
+            Social Media <span style="color: hsl(39, 100%, 71%)">10x</span>
+            <span style="font-family: MyFontI">Faster</span>
+            with AI
+          </h1>
+          <img
+            src="./assets/images/illustration-five-stars.webp"
+            width="150px"
+            alt="5 star rating"
+          />
+          <p
+            style="
+              color: white;
+              padding: 0%;
+              margin: 0%;
+              font-size: 15px;
+              font-weight: 200;
+              font-family: MyFont;
+              padding-bottom: 15px;
+            "
+          >
+            Over 4,000 5-star reviews
+          </p>
+        </div>
+        <div class="c3">
+          <h2
+            style="
+              font-family: MyFont;
+              letter-spacing: -1px;
+              font-weight: 500;
+              padding: 0%;
+              margin: 0%;
+              padding-bottom: 15px;
+              line-height: 28px;
+            "
+          >
+            Schedule to social media.
+          </h2>
+          <img
+            src="./assets/images/illustration-schedule-posts.webp"
+            height="200px"
+            width="200px"
+            alt="Bar plot"
+            style="object-fit: cover; object-position: left"
+          />
+          <p
+            style="
+              font-family: MyFont;
+              font-size: 15px;
+              line-height: 18px;
+              font-weight: 300;
+              margin: 0%;
+              padding: 0%;
+              padding-top: 15px;
+            "
+          >
+            Optimize post timings to publish content at the perfect time for
+            your audience.
+          </p>
+        </div>
+        <div class="c4">
+          <img
+            src="./assets/images/illustration-multiple-platforms.webp"
+            width="180px"
+            alt="Mulitple Platforms"
+            style="padding: 0%; margin: 0%; padding-bottom: 18px"
+          />
+          <h1
+            style="
+              font-family: MyFont;
+              font-size: 28px;
+              padding: 0%;
+              margin: 0%;
+              line-height: 25px;
+              letter-spacing: -1px;
+              font-weight: 550;
+            "
+          >
+            Manage multiple accounts and platforms.
+          </h1>
+        </div>
+        <div class="c5">
+          <h1
+            style="
+              font-family: MyFont;
+              font-size: 28px;
+              padding: 0%;
+              margin: 0%;
+              line-height: 25px;
+              letter-spacing: -1px;
+              font-weight: 550;
+              padding-bottom: 15px;
+              padding-top: 25px;
+            "
+          >
+            Maintain a consistent posting schedule.
+          </h1>
+          <img
+            src="./assets/images/illustration-consistent-schedule.webp"
+            width="165"
+            height="85px"
+            alt="Consitency Schedule"
+            style="object-fit: cover; object-position: top"
+          />
+        </div>
+        <div class="c6">
+          <h1
+            style="
+              font-size: 35px;
+              font-family: MyFont, sans-serif;
+              font-weight: 500;
+              margin-bottom: 0%;
+              letter-spacing: -1.5px;
+              line-height: 30px;
+              padding-bottom: 35px;
+            "
+          >
+            Write your content using AI.
+          </h1>
+          <img
+            src="./assets/images/illustration-ai-content.webp"
+            width="170px"
+            alt="Ai chatbot"
+            style="margin-bottom: 10px"
+          />
+        </div>
+        <div class="c7">
+          <h1
+            style="
+              font-size: 45px;
+              font-family: MyFont, sans-serif;
+              font-weight: 600;
+              margin: 0%;
+            "
+          >
+            >56%
+          </h1>
+          <p
+            style="
+              font-family: MyFont;
+              letter-spacing: -1px;
+              font-size: 18px;
+              margin: 0%;
+              padding-bottom: 25px;
+              font-weight: 300;
+            "
+          >
+            faster audience growth
+          </p>
+          <img
+            src="./assets/images/illustration-audience-growth.webp"
+            width="150px"
+            height="55px"
+            alt="Audience Growth"
+            style="padding: 0%; margin: 0%; object-fit: cover"
+          />
+        </div>
+        <div class="c8">
+          <img
+            src="./assets/images/illustration-grow-followers.webp"
+            alt="Growth of followers"
+            width="170px"
+            style="padding-left: 20px"
+          />
+          <h2
+            style="
+              font-family: MyFont;
+              letter-spacing: -1px;
+              font-weight: 500;
+              padding: 0%;
+              margin: 0%;
+              padding: 10px;
+              line-height: 28px;
+              color: white;
+            "
+          >
+            Grow followers with non-stop content.
+          </h2>
+        </div>
+      </div>
+    </main>
+    <div class="attribution" style="margin: 25px">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/greeshu-0">Jagarapu Greeshma</a>.
+    </div>
+  </body>
+</html>
